@@ -8,8 +8,10 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(20);
   });
 
-  xit('has a temperature of 22 when the up function is pressed twice', function(){
-
+  it('has a temperature of 22 when the up function is pressed twice', function(){
+    thermostat.up();
+    thermostat.up();
+    expect(thermostat.temperature).toEqual(22);
   });
 
   xit('has a temperature of 18 when the down function is pressed twice', function(){
