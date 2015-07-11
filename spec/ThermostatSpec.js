@@ -32,8 +32,11 @@ describe('Thermostat', function() {
   });
 
 
-  xit('has a toggle function to switch the power saving mode on and off', function(){
-    
+  it('has a toggle function to switch the power saving mode on and off', function(){
+    thermostat.togglePS();
+    expect(thermostat.powerSaving).toBe(false);
+    thermostat.togglePS();
+    expect(thermostat.powerSaving).toBe(true);    
   });
 
   xit('if the power saving mode is on, it has a maximum temperature of 25 degrees', function(){

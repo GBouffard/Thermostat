@@ -13,3 +13,7 @@ Thermostat.prototype.down = function() {
   };
   return this.temperature;
 };
+
+Thermostat.prototype.togglePS = function(){
+  return (this.powerSaving = !this.powerSaving);
+};
