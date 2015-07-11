@@ -20,8 +20,11 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(18); 
   });
 
-  xit('has a minimum temperature of 10 degrees', function(){
-    
+  it('has a minimum temperature of 10 degrees', function(){
+    for(i=0; i<10; i++) {
+        thermostat.down();
+    };
+    expect(thermostat.temperature).toEqual(10); 
   });
 
   xit('has a power saving mode, that is on by default', function(){
