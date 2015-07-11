@@ -27,5 +27,6 @@ Thermostat.prototype.resetTemperature = function() {
 
 Thermostat.prototype.displayColor = function() {
   if(this.temperature < 18) { return 'Green' };
+  if(this.temperature > 25) { return 'Red' };
   return 'Yellow';
 };

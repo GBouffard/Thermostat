@@ -17,14 +17,14 @@ describe('Thermostat', function() {
   it('has a temperature of 18 when the down function is pressed twice', function(){
     thermostat.down();
     thermostat.down();
-    expect(thermostat.temperature).toEqual(18); 
+    expect(thermostat.temperature).toEqual(18);
   });
 
   it('has a minimum temperature of 10 degrees', function(){
     for(i=0; i<20; i++) {
       thermostat.down();
     };
-    expect(thermostat.temperature).toEqual(10); 
+    expect(thermostat.temperature).toEqual(10);
   });
 
   it('has a power saving mode, that is on by default', function(){
@@ -36,14 +36,14 @@ describe('Thermostat', function() {
     thermostat.togglePS();
     expect(thermostat.powerSaving).toBe(false);
     thermostat.togglePS();
-    expect(thermostat.powerSaving).toBe(true);    
+    expect(thermostat.powerSaving).toBe(true);
   });
 
   it('if the power saving mode is on, it has a maximum temperature of 25 degrees', function(){
     for(i=0;i<15;i++) {
       thermostat.up();
     };
-    expect(thermostat.temperature).toEqual(25);  
+    expect(thermostat.temperature).toEqual(25);
   });
 
   it('if the power saving mode is off, it has a maximum temperature of 32 degrees', function(){
@@ -51,7 +51,7 @@ describe('Thermostat', function() {
     for(i=0;i<15;i++) {
       thermostat.up();
     };
-    expect(thermostat.temperature).toEqual(32);      
+    expect(thermostat.temperature).toEqual(32);
   });
 
   it('if the temperature is above 25 degrees and we switch power saving on, the temperature goes back to 25', function(){
@@ -60,14 +60,14 @@ describe('Thermostat', function() {
       thermostat.up();
     };
     thermostat.togglePS();
-    expect(thermostat.temperature).toEqual(25);      
+    expect(thermostat.temperature).toEqual(25);
   });
 
   it('has a reset function to bring the temperature back to 20 degrees', function(){
     thermostat.up();
     thermostat.up();
     thermostat.resetTemperature();
-    expect(thermostat.temperature).toEqual(20);    
+    expect(thermostat.temperature).toEqual(20);
   });
 
   it('displays information in yellow at initial state', function(){
@@ -77,11 +77,15 @@ describe('Thermostat', function() {
   it('displays information in green when the temperature is under 18 degrees', function(){
     thermostat.down();
     thermostat.down();
-    thermostat.down();    
-    expect(thermostat.displayColor()).toEqual('Green');   
+    thermostat.down();
+    expect(thermostat.displayColor()).toEqual('Green');
   });
 
-  xit('displays information in red when the temperature is over 25 degrees', function(){
-    
+  it('displays information in red when the temperature is over 25 degrees', function(){
+    thermostat.togglePS();
+    for(i=0;i<6;i++) {
+      thermostat.up();
+    };
+    expect(thermostat.displayColor()).toEqual('Red');
   });
 });
