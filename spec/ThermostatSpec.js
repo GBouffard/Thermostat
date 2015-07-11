@@ -40,14 +40,18 @@ describe('Thermostat', function() {
   });
 
   it('if the power saving mode is on, it has a maximum temperature of 25 degrees', function(){
-    for(i=0;i<10;i++) {
+    for(i=0;i<15;i++) {
       thermostat.up();
     };
     expect(thermostat.temperature).toEqual(25);  
   });
 
-  xit('if the power saving mode is off, it has a maximum temperature of 32 degrees', function(){
-    
+  it('if the power saving mode is off, it has a maximum temperature of 32 degrees', function(){
+    thermostat.togglePS();
+    for(i=0;i<15;i++) {
+      thermostat.up();
+    };
+    expect(thermostat.temperature).toEqual(32);      
   });
 
   xit('has a reset function to bring the temperature back to 20 degrees', function(){
