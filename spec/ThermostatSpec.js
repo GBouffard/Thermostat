@@ -14,8 +14,10 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(22);
   });
 
-  xit('has a temperature of 18 when the down function is pressed twice', function(){
-    
+  it('has a temperature of 18 when the down function is pressed twice', function(){
+    thermostat.down();
+    thermostat.down();
+    expect(thermostat.temperature).toEqual(18); 
   });
 
   xit('has a minimum temperature of 10 degrees', function(){
