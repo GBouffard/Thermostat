@@ -63,8 +63,11 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(25);      
   });
 
-  xit('has a reset function to bring the temperature back to 20 degrees', function(){
-    
+  it('has a reset function to bring the temperature back to 20 degrees', function(){
+    thermostat.up();
+    thermostat.up();
+    thermostat.resetTemperature();
+    expect(thermostat.temperature).toEqual(20);    
   });
 
   xit('displays information in yellow at initial state', function(){

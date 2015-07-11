@@ -20,3 +20,7 @@ Thermostat.prototype.togglePS = function(){
   if (this.temperature > 25) { this.temperature = 25 };
   return (this.powerSaving = !this.powerSaving);
 };
+
+Thermostat.prototype.resetTemperature = function() {
+  this.temperature = 20;
+};
