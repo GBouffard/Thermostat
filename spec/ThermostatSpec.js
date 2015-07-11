@@ -54,6 +54,15 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(32);      
   });
 
+  it('if the temperature is above 25 degrees and we switch power saving on, the temperature goes back to 25', function(){
+    thermostat.togglePS();
+    for(i=0;i<15;i++) {
+      thermostat.up();
+    };
+    thermostat.togglePS();
+    expect(thermostat.temperature).toEqual(25);      
+  });
+
   xit('has a reset function to bring the temperature back to 20 degrees', function(){
     
   });

@@ -17,5 +17,6 @@ Thermostat.prototype.down = function() {
 };
 
 Thermostat.prototype.togglePS = function(){
+  if (this.temperature > 25) { this.temperature = 25 };
   return (this.powerSaving = !this.powerSaving);
 };
