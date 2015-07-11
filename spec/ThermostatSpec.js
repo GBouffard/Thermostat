@@ -70,8 +70,8 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(20);    
   });
 
-  xit('displays information in yellow at initial state', function(){
-    
+  it('displays information in yellow at initial state', function(){
+     expect(thermostat.displayColor()).toEqual('Yellow');
   });
 
   xit('displays information in green when the temperature is under 18 degrees', function(){

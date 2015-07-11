@@ -24,3 +24,7 @@ Thermostat.prototype.togglePS = function(){
 Thermostat.prototype.resetTemperature = function() {
   this.temperature = 20;
 };
+
+Thermostat.prototype.displayColor = function() {
+  return 'Yellow';
+};
