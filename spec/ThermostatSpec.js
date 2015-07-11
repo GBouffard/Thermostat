@@ -74,8 +74,11 @@ describe('Thermostat', function() {
      expect(thermostat.displayColor()).toEqual('Yellow');
   });
 
-  xit('displays information in green when the temperature is under 18 degrees', function(){
-    
+  it('displays information in green when the temperature is under 18 degrees', function(){
+    thermostat.down();
+    thermostat.down();
+    thermostat.down();    
+    expect(thermostat.displayColor()).toEqual('Green');   
   });
 
   xit('displays information in red when the temperature is over 25 degrees', function(){
