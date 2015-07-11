@@ -4,7 +4,8 @@ function Thermostat() {
 }
 
 Thermostat.prototype.up = function() {
-  this.temperature ++
+  if (this.powerSaving === true && this.temperature < 25) { this.temperature ++; };
+  return this.temperature;
 };
 
 Thermostat.prototype.down = function() {
