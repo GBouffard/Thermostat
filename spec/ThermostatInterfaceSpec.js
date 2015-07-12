@@ -19,7 +19,8 @@ describe('Thermostat interface', function() {
     expect($('#temperature')).toHaveText(19);
   });
 
-  xit('displays the power saving as On by default', function(){
+  it('displays the power saving as On by default', function(){
+    expect($('#powerSave')).toHaveText('ON');
   });
 
   xit('can toggle the power saving On and Off with the Power Saving Button', function(){
