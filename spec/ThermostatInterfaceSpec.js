@@ -14,7 +14,9 @@ describe('Thermostat interface', function() {
     expect($('#temperature')).toHaveText(21);
   });
 
-  xit('can decrease the temperature by clicking the - button', function(){
+  it('can decrease the temperature by clicking the - button', function(){
+    $('#down').click();
+    expect($('#temperature')).toHaveText(19);
   });
 
   xit('displays the power saving as On by default', function(){
