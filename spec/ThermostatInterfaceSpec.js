@@ -1,14 +1,12 @@
 describe('Thermostat interface', function() {
 
-  var thermostat
-
   beforeEach(function() {
     jasmine.getFixtures().fixturesPath = '.';
     loadFixtures('index.html');
-    thermostat = new Thermostat
   });
 
-  xit('displays the temperature at 20 by default', function(){
+  it('displays the temperature 20 by default', function(){
+    expect($('#temperature')).toHaveText(20);
   });
 
   xit('can increase the temperature by clicking the + button', function(){
