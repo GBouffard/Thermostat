@@ -22,7 +22,7 @@ Heroku
 
 Objectives of exercise
 ----
-To learn about Javascript and JQuery.
+To learn about Javascript, Jasmine and JQuery.
 
 Technologies used
 ----
@@ -36,9 +36,9 @@ How to run it
 ```
 git clone git@github.com:GBouffard/Thermostat.git
 cd Thermostat
-
+open index.html
 ```
-Instructions to cone
+and now you can play with the Thermostat.
 
 How to run tests
 ----
@@ -49,4 +49,4 @@ open SpecRunner.html
 
 and this is what you should see:
 
-![](public/images/tests_to_come.png)
+![](public/images/jasmine_tests.png)

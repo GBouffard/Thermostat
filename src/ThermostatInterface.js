@@ -1,5 +1,6 @@
 $( document ).ready(function() {
   var thermostat = new Thermostat();
+  var api = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk'
 
   var displayTemperature = function(){
     $('#temperature').text(thermostat.temperature);
@@ -20,6 +21,15 @@ $( document ).ready(function() {
     if (thermostat.powerSaving == true) return 'ON';
     return 'OFF';
   };
+
+  $.getJSON(api, function(data) {
+    var averageTemp = (data.main.temp -273.15).toFixed(1);
+    $('#averageInLondon').html(averageTemp);
+    var maxTemp = (data.main.temp_max -273.15).toFixed(1);
+    $('#maxInLondon').html(maxTemp);
+    var minTemp = (data.main.temp_min -273.15).toFixed(1);
+    $('#minInLondon').html(minTemp);
+  });
 
   displayTemperature();
   powerSavingMode();
