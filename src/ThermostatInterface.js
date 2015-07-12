@@ -3,14 +3,21 @@ $( document ).ready(function() {
 
   var displayTemperature = function(){
     $('#temperature').text(thermostat.temperature);
+    colorDisplay(thermostat.temperature);
+  };
+
+  var colorDisplay = function(temp){
+    if (temp < 18) { $('#temperature').css('color', 'rgb(15, 152, 0)');
+    } else { $('#temperature').css('color', 'rgb(239, 247, 0)'); };
   };
 
   var powerSavingMode = function(){
-    var onOrOff = function(){
-      if (thermostat.powerSaving == true) return 'ON';
-      return 'OFF';
-    };
-    $('#powerSave').text(onOrOff)
+    $('#powerSave').text(onOrOff())
+  };
+
+  var onOrOff = function(){
+    if (thermostat.powerSaving == true) return 'ON';
+    return 'OFF';
   };
 
   displayTemperature();

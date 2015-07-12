@@ -37,10 +37,15 @@ describe('Thermostat interface', function() {
     expect($('#temperature')).toHaveText(20);
   });
 
-  xit('displays the temperature in Yellow by default', function(){
+  it('displays the temperature in Yellow by default', function(){
+    expect($('#temperature')).toHaveCss({color: 'rgb(239, 247, 0)'});
   });
 
-  xit('displays the temperature in Green when the temperature is under 18 degrees', function(){
+  it('displays the temperature in Green when the temperature is under 18 degrees', function(){
+    $('#down').click();
+    $('#down').click();
+    $('#down').click();
+    expect($('#temperature')).toHaveCss({color:'rgb(15, 152, 0)'});      
   });
 
   xit('displays the temperature in Red when the temperature is over 25 degrees', function(){
