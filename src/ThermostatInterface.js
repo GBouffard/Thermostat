@@ -30,4 +30,9 @@ $( document ).ready(function() {
     thermostat.togglePS();
     powerSavingMode();
   });
+
+  $('#reset').click(function(){
+    thermostat.resetTemperature();
+    displayTemperature();
+  });
 });

@@ -30,7 +30,11 @@ describe('Thermostat interface', function() {
     expect($('#powerSave')).toHaveText('ON');    
   });
 
-  xit('brings back the temperature to 20 when we press the Reset button', function(){
+  it('brings back the temperature to 20 when we press the Reset button', function(){
+    $('#down').click();
+    $('#down').click();
+    $('#reset').click();
+    expect($('#temperature')).toHaveText(20);
   });
 
   xit('displays the temperature in Yellow by default', function(){
