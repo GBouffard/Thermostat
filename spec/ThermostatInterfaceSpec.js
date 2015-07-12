@@ -9,7 +9,9 @@ describe('Thermostat interface', function() {
     expect($('#temperature')).toHaveText(20);
   });
 
-  xit('can increase the temperature by clicking the + button', function(){
+  it('can increase the temperature by clicking the + button', function(){
+    $('#up').click();
+    expect($('#temperature')).toHaveText(21);
   });
 
   xit('can decrease the temperature by clicking the - button', function(){

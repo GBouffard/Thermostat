@@ -7,4 +7,8 @@ $( document ).ready(function() {
 
   displayTemperature();
 
+  $('#up').click(function(){
+    thermostat.up();
+    displayTemperature();
+  });
 });
