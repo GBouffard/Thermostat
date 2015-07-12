@@ -17,7 +17,7 @@ Heroku
 ----
 [Guillaume's Thermostat](LINK TO COME)
 
-![](public/images/screenshot_to_come.png)
+![](public/screenshot_to_come.png)
 
 
 Objectives of exercise
@@ -30,6 +30,7 @@ Technologies used
 - Jasmine
 - JQuery
 - HTML & CSS
+- External API
 
 How to run it
 ----
@@ -49,4 +50,4 @@ open SpecRunner.html
 
 and this is what you should see:
 
-![](public/images/jasmine_tests.png)
+![](public/jasmine_tests.png)
