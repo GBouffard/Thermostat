@@ -8,6 +8,7 @@ $( document ).ready(function() {
   var powerSavingMode = function(){
     var onOrOff = function(){
       if (thermostat.powerSaving == true) return 'ON';
+      return 'OFF';
     };
     $('#powerSave').text(onOrOff)
   };
@@ -23,5 +24,10 @@ $( document ).ready(function() {
   $('#down').click(function(){
     thermostat.down();
     displayTemperature();
+  });
+
+  $('#powersaveSwitch').click(function(){
+    thermostat.togglePS();
+    powerSavingMode();
   });
 });

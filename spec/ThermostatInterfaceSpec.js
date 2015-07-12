@@ -23,7 +23,11 @@ describe('Thermostat interface', function() {
     expect($('#powerSave')).toHaveText('ON');
   });
 
-  xit('can toggle the power saving On and Off with the Power Saving Button', function(){
+  it('can toggle the power saving On and Off with the Power Saving Button', function(){
+    $('#powersaveSwitch').click();
+    expect($('#powerSave')).toHaveText('OFF');
+    $('#powersaveSwitch').click();
+    expect($('#powerSave')).toHaveText('ON');    
   });
 
   xit('brings back the temperature to 20 when we press the Reset button', function(){
