@@ -7,8 +7,9 @@ $( document ).ready(function() {
   };
 
   var colorDisplay = function(temp){
-    if (temp < 18) { $('#temperature').css('color', 'rgb(15, 152, 0)');
-    } else { $('#temperature').css('color', 'rgb(239, 247, 0)'); };
+    if (temp < 18) { $('#temperature').css('color', 'rgb(15, 152, 0)') 
+    } else if (temp > 25) { $('#temperature').css('color', 'rgb(210, 0, 0)')
+    } else { $('#temperature').css('color', 'rgb(239, 247, 0)') };
   };
 
   var powerSavingMode = function(){
@@ -36,6 +37,7 @@ $( document ).ready(function() {
   $('#powersaveSwitch').click(function(){
     thermostat.togglePS();
     powerSavingMode();
+    displayTemperature();
   });
 
   $('#reset').click(function(){

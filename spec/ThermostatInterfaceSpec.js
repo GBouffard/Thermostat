@@ -48,6 +48,11 @@ describe('Thermostat interface', function() {
     expect($('#temperature')).toHaveCss({color:'rgb(15, 152, 0)'});      
   });
 
-  xit('displays the temperature in Red when the temperature is over 25 degrees', function(){
+  it('displays the temperature in Red when the temperature is over 25 degrees', function(){
+    $('#powersaveSwitch').click();
+    for(i=0;i<6;i++){
+      $('#up').click();
+    };
+    expect($('#temperature')).toHaveCss({color:'rgb(210, 0, 0)'});
   });
 });
