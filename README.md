@@ -17,7 +17,7 @@ Heroku
 ----
 [Guillaume's Thermostat](LINK TO COME)
 
-![](public/screenshot_to_come.png)
+![](public/thermostat_screenshot.png)
 
 
 Objectives of exercise

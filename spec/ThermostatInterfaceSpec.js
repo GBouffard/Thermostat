@@ -3,6 +3,7 @@ describe('Thermostat interface', function() {
   beforeEach(function() {
     jasmine.getFixtures().fixturesPath = '.';
     loadFixtures('index.html');
+    $.holdReady(false);
   });
 
   it('displays the temperature 20 by default', function(){
