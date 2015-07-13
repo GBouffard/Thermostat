@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/GBouffard/Thermostat.svg?branch=master)](https://travis-ci.org/GBouffard/Thermostat)
+
 :high_brightness: Thermostat :high_brightness:
 ===
 This is me re-doing from scratch the Makers Academy Thermostat tutorial to learn about Javascript and JQuery.
