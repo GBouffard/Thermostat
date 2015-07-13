@@ -10,7 +10,7 @@ body {
 
 #thermoFrame {
   width: 350px;
-  height: 450px;
+  height: 520px;
   background-image: url(frame-background.jpg);
   background-position: center; 
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
@@ -18,7 +18,7 @@ body {
   padding: 10px 10px;
   border-radius:10px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #logo {
@@ -104,4 +104,28 @@ table td {
   top:1px;
 }
 
+#screen {
+  background-image: url(bottom-screen.png);
+  background-size: 348px 80%;
+  background-repeat: no-repeat;
+  background-position: center; 
+  display:block;
+  text-align: center;
+  font-family: Orbitron, sans-serif;
+  color: white;
+  font-size: 15px;
+  height: 120px;
+}
 
+#marquee {
+  width: 320px;
+  behavior: scroll;
+  direction: left;
+  position:fixed;
+  top: 507px;
+  margin-left:-160px;
+}
+
+#positionning {
+  line-height: 90px;
+}
