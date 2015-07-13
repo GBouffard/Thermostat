@@ -30,9 +30,15 @@ body {
 }
 
 #temperature {
+  background-image: url(round-screen.png);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  display:block;
   text-align: center;
-  font-family: Tahoma, sans-serif;
-  font-size: 96px;
+  line-height: 160px;
+  font-family: Orbitron, sans-serif;
+  font-size: 52px;
   height: 150px;
 }
 
