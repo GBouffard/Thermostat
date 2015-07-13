@@ -36,16 +36,16 @@ body {
   height: 150px;
 }
 
-#thermobuttons {
+table {
   width: 350px;
   height: 100px;
 }
 
-.length {
+table tr {
   width: 100%;
 }
 
-.tdlength {
+table td {
   width: 50%;
   text-align:center;
 }
@@ -71,6 +71,31 @@ body {
   background: #262626;
 }
 
-
+.other-buttons {
+  -moz-box-shadow: 0px 0px 0px 2px #8c8c8c;
+  -webkit-box-shadow: 0px 0px 0px 2px #8c8c8c;
+  box-shadow: 0px 0px 0px 2px #8c8c8c;
+  background-color:#c7c7c7;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border:2px solid #3b3b3b;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  width: 150px;
+  height: 40px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #000000;
+}
+.other-buttons:hover {
+  background-color:#b3b3b3;
+}
+.other-buttons:active {
+  position:relative;
+  top:1px;
+}
 
 
