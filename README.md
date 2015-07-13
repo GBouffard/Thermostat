@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/GBouffard/Thermostat.svg?branch=master)](https://travis-ci.org/GBouffard/Thermostat)
+[![Build Status](https://travis-ci.org/GBouffard/Thermostat.svg?branch=master)](https://travis-ci.org/GBouffard/Thermostat) [![Code Climate](https://codeclimate.com/repos/55a3cb62e30ba04cef0021bf/badges/60cbeb5ee335c0a4dbb6/gpa.svg)](https://codeclimate.com/repos/55a3cb62e30ba04cef0021bf/feed)
 
 :high_brightness: Thermostat :high_brightness:
 ===
