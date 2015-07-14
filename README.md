@@ -39,9 +39,10 @@ How to run it
 ```
 git clone git@github.com:GBouffard/Thermostat.git
 cd Thermostat
-open index.html
+npm install
+node server.js
 ```
-and now you can play with the Thermostat.
+By opening your browser on http://localhost:8080/, you can now you can play with the Thermostat.
 
 How to run tests
 ----
