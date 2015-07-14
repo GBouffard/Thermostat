@@ -2,7 +2,7 @@ describe('Thermostat interface', function() {
 
   beforeEach(function() {
     jasmine.getFixtures().fixturesPath = '.';
-    loadFixtures('index.html');
+    loadFixtures('views/index.ejs');
     $.holdReady(false);
   });
 
