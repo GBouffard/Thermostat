@@ -1,0 +1,23 @@
+{
+  "name": "Thermostat",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/GBouffard/Thermostat.svg?branch=master)](https://travis-ci.org/GBouffard/Thermostat) [![Code Climate](https://codeclimate.com/repos/55a3cb62e30ba04cef0021bf/badges/60cbeb5ee335c0a4dbb6/gpa.svg)](https://codeclimate.com/repos/55a3cb62e30ba04cef0021bf/feed)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GBouffard/Thermostat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GBouffard/Thermostat/issues"
+  },
+  "homepage": "https://github.com/GBouffard/Thermostat#readme",
+  "dependencies": {
+    "ejs": "~1.0.0",
+    "express": "^4.13.1"
+  }
+}
