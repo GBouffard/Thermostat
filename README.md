@@ -17,7 +17,7 @@ This is me re-doing from scratch the Makers Academy Thermostat tutorial to learn
 
 Heroku
 ----
-[Guillaume's Thermostat](LINK TO COME)
+[Guillaume's Thermostat](http://guillaume-thermostat.herokuapp.com/)
 
 ![](public/thermostat_screenshot.png)
 
